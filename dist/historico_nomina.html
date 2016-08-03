@@ -1,0 +1,656 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zona PC Software</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Metis core stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+
+    <!-- metisMenu stylesheet -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker3.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
+
+
+
+    <script>
+      less = {
+        env: "development",
+        relativeUrls: false,
+        rootpath: "../assets/"
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/less/theme.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+
+    <!--Modernizr-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  </head>
+  <body class="sidebar-left-mini">
+    <div class="bg-dark dk" id="wrap">
+      <div id="top">
+
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <header class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+              </button>
+              <a href="index.html" class="navbar-brand">
+                <div class="logo">Zona PC Software</div>
+              </a> 
+            </header>
+            <div class="topnav">
+              <div class="btn-group">
+              <div class="btn-group">
+                <a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                  <i class="fa fa-power-off"></i>
+                </a> 
+              </div>
+              <div class="btn-group">
+                <a data-placement="bottom" data-original-title="Show / Hide Left" data-toggle="tooltip" class="btn btn-primary btn-sm toggle-left" id="menu-toggle">
+                  <i class="fa fa-bars"></i>
+                </a> 
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav><!-- /.navbar -->
+        <header class="head">
+          <div class="main-bar">
+            <h3>
+              <i class="fa fa-users"></i>&nbsp; Nómina</h3>
+          </div><!-- /.main-bar -->
+        </header><!-- /.head -->
+      </div><!-- /#top -->
+      <div id="left">
+        <div class="media user-media bg-dark dker">
+          <div class="user-media-toggleHover">
+            <span class="fa fa-user"></span> 
+          </div>
+          <div class="user-wrapper bg-dark">
+            <a class="user-link" href="">
+              <i class="fa fa-user fa-5x"></i>
+            </a> 
+            <div class="media-body">
+              <ul class="list-unstyled user-info">
+                <li> <a href="">Administrador</a>  </li>
+                <li>Ultimo acceso :
+                  <br>
+                  <small>
+                    <i class="fa fa-calendar"></i>&nbsp;16 Mar 16:32</small> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- #menu -->
+        <ul id="menu" class="bg-blue dker">
+          <li class="nav-header">Menú</li>
+          <li class="nav-divider"></li>
+          <li class="">
+            <a href="index.html">
+              <i class="fa fa-dashboard"></i><span class="link-title">&nbsp;Inicio</span> 
+            </a> 
+          </li>
+          <li class="">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span class="link-title"> Inventario</span> 
+              <span class="fa arrow"></span>
+            </a> 
+            <ul class="collapse" aria-expanded="false" style="height: 0px;">
+              <li>
+                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a> 
+                <ul class="collapse">
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li>
+                    <a href="javascript:;">Level 2  <span class="fa arrow"></span>  </a> 
+                    <ul class="collapse">
+                      <li> <a href="javascript:;">Level 3</a>  </li>
+                      <li> <a href="javascript:;">Level 3</a>  </li>
+                      <li>
+                        <a href="javascript:;">Level 3  <span class="fa arrow"></span>  </a> 
+                        <ul class="collapse">
+                          <li> <a href="javascript:;">Level 4</a>  </li>
+                          <li> <a href="javascript:;">Level 4</a>  </li>
+                          <li>
+                            <a href="javascript:;">Level 4  <span class="fa arrow"></span>  </a> 
+                            <ul class="collapse">
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> <a href="javascript:;">Level 4</a>  </li>
+                    </ul>
+                  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                </ul>
+              </li>
+              <li> <a href="javascript:;">Level 1</a>  </li>
+              <li>
+                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a> 
+                <ul class="collapse">
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="javascript:;">
+              <i class="fa fa-file-text-o"></i>
+              <span class="link-title"> Control de Facturas</span> 
+              <span class="fa arrow"></span>
+            </a> 
+            <ul class="collapse" aria-expanded="false" style="height: 0px;">
+              <li>
+                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a> 
+                <ul class="collapse">
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li>
+                    <a href="javascript:;">Level 2  <span class="fa arrow"></span>  </a> 
+                    <ul class="collapse">
+                      <li> <a href="javascript:;">Level 3</a>  </li>
+                      <li> <a href="javascript:;">Level 3</a>  </li>
+                      <li>
+                        <a href="javascript:;">Level 3  <span class="fa arrow"></span>  </a> 
+                        <ul class="collapse">
+                          <li> <a href="javascript:;">Level 4</a>  </li>
+                          <li> <a href="javascript:;">Level 4</a>  </li>
+                          <li>
+                            <a href="javascript:;">Level 4  <span class="fa arrow"></span>  </a> 
+                            <ul class="collapse">
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                              <li> <a href="javascript:;">Level 5</a>  </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li> <a href="javascript:;">Level 4</a>  </li>
+                    </ul>
+                  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                </ul>
+              </li>
+              <li> <a href="javascript:;">Level 1</a>  </li>
+              <li>
+                <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a> 
+                <ul class="collapse">
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                  <li> <a href="javascript:;">Level 2</a>  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span class="link-title">Nómina</span> 
+              <span class="fa arrow"></span> 
+            </a> 
+            <ul>
+              <li>
+                <a href=ficha_empleado.html>
+                  <i class="fa fa-angle-right"></i>&nbsp; Ficha de Empleado </a> 
+              </li>
+              <li>
+                <a href="nomina.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Nómina </a> 
+              </li>
+              <li>
+                <a href="recibos_nomina.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Recibos </a> 
+              </li>
+              <li>
+                <a href="historico_nomina.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Historico de Nómina </a> 
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="estado_financiero.html">
+              <i class="fa fa-bar-chart-o"></i><span class="link-title">&nbsp;Estado Financiero</span> 
+            </a> 
+            </li>
+
+        <!-- /#menu -->
+      </div><!-- /#left -->
+      <div id="content">
+        <div class="outer">
+          <div class="inner bg-light lter">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="box primary">
+                  <header>
+                    <h5>Buscar Nómina</h5>
+                  </header>
+                  <div class="body collapse in text-center">
+                    <form class="form-inline">
+                      <div class="row form-group">
+                          <div class="col-lg-2">
+                            <select class="form-control">
+                              <option selected disabled>Año</option>
+                              <option>2016</option>
+                              <option>2015</option>
+                              <option>2014</option>
+                              <option>2013</option>
+                              <option>2012</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-lg-2">
+                            <select class="form-control">
+                              <option selected disabled>Mes</option>
+                              <option>Enero</option>
+                              <option>Febrero</option>
+                              <option>Marzo</option>
+                              <option>Abril</option>
+                              <option>Mayo</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-lg-3">
+                            <select class="form-control">
+                              <option selected disabled>Quincena </option>
+                              <option>1era quincena </option>
+                              <option>2da quincena</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row form-group">
+                          <div class="col-lg-3">
+                          <a href="#" class="btn btn-success btn-grad" data-original-title="" title=""><i class="fa fa-search fa-sm"></i> Buscar</a>
+                          </div>
+                        </div>
+                    </form>
+                  </div><!-- /.body -->
+                </div>
+               </div>
+              <div class="col-lg-6 text-center">
+                  <a class="quick-btn" href="#" title="Cargar Nómina en la base de datos">
+                <i class="fa fa fa-upload fa-2x"></i>
+                <span>Cargar</span> 
+              </a>
+                  <a class="quick-btn" href="#" title="Imprimir Nómina">
+                <i class="fa fa fa-print fa-2x"></i>
+                <span>Imprmir</span> 
+              </a>
+                </div>
+              </div>
+          <!--Begin Datatables-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="box">
+                  <header>
+                    <div class="icons">
+                      <i class="fa fa-table"></i>
+                    </div>
+                    <h5>Nómina de empleados</h5>
+                    <div class="toolbar">
+                      <nav style="padding: 8px;">
+                        <a href="javascript:;" class="btn btn-default btn-xs collapse-box">
+                          <i class="fa fa-minus"></i>
+                        </a> 
+                        <a href="javascript:;" class="btn btn-default btn-xs full-box">
+                          <i class="fa fa-expand"></i>
+                        </a> 
+                        <a href="javascript:;" class="btn btn-danger btn-xs close-box">
+                          <i class="fa fa-times"></i>
+                        </a> 
+                      </nav>
+                    </div>
+                  </header>
+                  <div id="collapse4" class="body">
+                    <table id="1" class="table table-bordered table-condensed table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Apellido</th>
+                          <th>Cédula</th>
+                          <th>Sueldo Mensual</th>
+                          <th>Salario Diario</th>
+                          <th>Inasistencias</th>
+                          <th>Reposos</th>
+                          <th>Total a deducir</th>
+                          <th>Total devengado</th>
+                          <th>Días adicionales</th>
+                          <th>S.S.O R.P.E</th>
+                          <th>F.A.O.V</th>
+                          <th>Total retenido</th>
+                          <th>Total pagado</th>
+                          <th>Recibo de pago</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Eduardo</td>
+                          <td>Castro</td>
+                          <td>5893449</td>
+                          <td>Bs 11.000,00</td>
+                          <td>Bs 366,66</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>0</td>
+                          <td>Bs 5.500,00</td>
+                          <td>-</td>
+                          <td>Bs 225,15</td>
+                          <td>Bs 50,00</td>
+                          <td>Bs 285,15</td>
+                          <td>Bs 5.200,00</td>
+                          <td class="text-center">
+                            <a href="#" class="btn btn-success btn-flat" data-original-title="" title="Generar recibo de pago">
+                            <i class="fa fa-file-text-o fa-sm"></i> Recibo
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pedro</td>
+                          <td>Soto</td>
+                          <td>18223311</td>
+                          <td>Bs 25.000,00</td>
+                          <td>Bs 366,66</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>0</td>
+                          <td>Bs 15.500,00</td>
+                          <td>-</td>
+                          <td>Bs 1.225,15</td>
+                          <td>Bs 1.150,00</td>
+                          <td>Bs 3.285,15</td>
+                          <td>Bs 15.200,00</td>
+                          <td class="text-center">
+                            <a href="#" class="btn btn-success btn-flat" data-original-title="" title="Generar recibo de pago">
+                            <i class="fa fa-file-text-o fa-sm"></i> Recibo
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Manuel</td>
+                          <td>Diaz</td>
+                          <td>20154350</td>
+                          <td>Bs 18.000,00</td>
+                          <td>Bs 500,66</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>0</td>
+                          <td>Bs 7.500,00</td>
+                          <td>-</td>
+                          <td>Bs 1.050,15</td>
+                          <td>Bs 1.150,00</td>
+                          <td>Bs 2.285,15</td>
+                          <td>Bs 6.200,00</td>
+                          <td class="text-center">
+                            <a href="#" class="btn btn-success btn-flat" data-original-title="" title="Generar recibo de pago">
+                            <i class="fa fa-file-text-o fa-sm"></i> Recibo
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row
+
+            <!--End Datatables-->
+
+          <!--Begin Datatables-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="box danger">
+                  <header>
+                    <h5>Totales Generales de Nómina</h5>
+                  </header>
+                  <div id="collapse4" class="body">
+                    <table id="1" class="table table-bordered table-condensed table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Sueldo Mensual</th>
+                          <th>Salario Diario</th>
+                          <th>Total a deducir</th>
+                          <th>Total devengado</th>
+
+                          <th>S.S.O R.P.E</th>
+                          <th>F.A.O.V</th>
+                          <th>Total a retener</th>
+                          <th>Total a pagar</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="success">
+                          <td> <h4 class="text-center"> <strong>Totales Generales</strong> </h4></td>
+                          <td>Bs 50.000,00</td>
+                          <td>Bs 50.000,00</td>
+                          <td>0</td>
+                          <td>Bs 50.000,00</td>
+                          <td>Bs 50.000,00</td>
+                          <td>Bs 50.000,00</td>
+                          <td>Bs 50.000,00</td>
+                          <td>Bs 50.000,00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row
+
+            <!--End Datatables-->
+
+            </div>
+          </div><!-- /.inner -->
+        </div><!-- /.outer -->
+      </div><!-- /#content -->
+      <div id="right" class="bg-light lter">
+        <div class="alert alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Warning!</strong>  Best check yo self, you're not looking too good.
+        </div>
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <ul class="list-unstyled">
+            <li>Visitor <span class="inlinesparkline pull-right">1,4,4,7,5,9,10</span> </li>
+            <li>Online Visitor <span class="dynamicsparkline pull-right">Loading..</span> </li>
+            <li>Popularity <span class="dynamicbar pull-right">Loading..</span> </li>
+            <li>New Users <span class="inlinebar pull-right">1,3,4,5,3,5</span> </li>
+          </ul>
+        </div><!-- /.well well-small -->
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <button class="btn btn-block">Default</button>
+          <button class="btn btn-primary btn-block">Primary</button>
+          <button class="btn btn-info btn-block">Info</button>
+          <button class="btn btn-success btn-block">Success</button>
+          <button class="btn btn-danger btn-block">Danger</button>
+          <button class="btn btn-warning btn-block">Warning</button>
+          <button class="btn btn-inverse btn-block">Inverse</button>
+          <button class="btn btn-metis-1 btn-block">btn-metis-1</button>
+          <button class="btn btn-metis-2 btn-block">btn-metis-2</button>
+          <button class="btn btn-metis-3 btn-block">btn-metis-3</button>
+          <button class="btn btn-metis-4 btn-block">btn-metis-4</button>
+          <button class="btn btn-metis-5 btn-block">btn-metis-5</button>
+          <button class="btn btn-metis-6 btn-block">btn-metis-6</button>
+        </div><!-- /.well well-small -->
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <span>Default</span> <span class="pull-right"><small>20%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+          </div>
+          <span>Success</span> <span class="pull-right"><small>40%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+          </div>
+          <span>warning</span> <span class="pull-right"><small>60%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+          </div>
+          <span>Danger</span> <span class="pull-right"><small>80%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+          </div>
+        </div>
+      </div><!-- /#right -->
+    </div><!-- /#wrap -->
+    <footer class="Footer bg-dark dker">
+      <p>© Copyright 2016 Zona PC. Todos los Derechos Reservados.</p>
+    </footer><!-- /#footer -->
+
+ <!--jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.4/js/jquery.tablesorter.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.1/js/bootstrap-colorpicker.min.js"></script>
+
+    <!--Bootstrap -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- MetisMenu -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+    <!-- Screenfull -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
+    <script src="assets/lib/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="assets/lib/jQuery.validVal/js/jquery.validVal.min.js"></script>
+
+    <!-- Metis core scripts -->
+    <script src="assets/js/core.min.js"></script>
+
+    <!-- Metis demo scripts -->
+    <script src="assets/js/app.js"></script>
+    <script>
+$(document).ready(function() {
+    $('#1').DataTable( {
+        "scrollX": true
+    } );
+} );
+
+      $(function() {
+        Metis.formGeneral();
+      });
+    </script>
+    <script src="assets/js/style-switcher.min.js"></script>
+
+
+
+    <!-- #helpModal -->
+    <div id="helpModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Editar datos de empleado</h4>
+          </div>
+          <div class="modal-body">
+<!--------- FORMULARIO -------->
+                  <div id="div-4" class="body">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Nombre:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" placeholder="Ingrese nombre" maxlength="20">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Apellido:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" placeholder="Ingrese apellido" maxlength="20">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Cédula:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="number" placeholder="00.000.000" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Fecha de ingreso: </label>
+                        <div class="col-lg-5">
+                          <div class="input-group input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" type="text" value="01-01-2016" readonly>
+                            <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Sueldo Mensual: </label>
+                        <div class="col-lg-5">
+                          <div class="input-group">
+                            <span class="input-group-addon">Bs</span> 
+                            <input class="form-control" type="text" placeholder="11.577,81">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Inasistencias:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="number" placeholder="0" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Reposos:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="number" placeholder="0" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Días Adicionales:</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="number" placeholder="0" >
+                        </div>
+                      </div>
+                  </div>
+            <!------------------- FORMULARIO -------------------------->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Guardar</button>
+          </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --><!-- /#helpModal -->
+  </body>

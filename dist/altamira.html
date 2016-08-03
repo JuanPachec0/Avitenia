@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zona PC Software</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Metis core stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <!-- metisMenu stylesheet -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker3.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css">
+
+    <script>
+      less = {
+        env: "development",
+        relativeUrls: false,
+        rootpath: "../assets/"
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/less/theme.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+
+    <!--Modernizr-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  </head>
+  <body class="sidebar-left-mini">
+    <div class="bg-dark dk" id="wrap">
+      <div id="top">
+
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <header class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+              </button>
+              <a href="index.html" class="navbar-brand">
+                <div class="logo">Zona PC Software</div>
+              </a> 
+            </header>
+            <div class="topnav">
+              <div class="btn-group">
+              <div class="btn-group">
+                <a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                  <i class="fa fa-power-off"></i>
+                </a> 
+              </div>
+              <div class="btn-group">
+                <a data-placement="bottom" data-original-title="Show / Hide Left" data-toggle="tooltip" class="btn btn-primary btn-sm toggle-left" id="menu-toggle">
+                  <i class="fa fa-bars"></i>
+                </a> 
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav><!-- /.navbar -->
+        <header class="head">
+          <div class="main-bar">
+            <h3>
+              <i class="fa fa-file-text-o"></i>&nbsp; Administración</h3>
+          </div><!-- /.main-bar -->
+        </header><!-- /.head -->
+      </div><!-- /#top -->
+      <div id="left">
+        <div class="media user-media bg-dark dker">
+          <div class="user-media-toggleHover">
+            <span class="fa fa-user"></span> 
+          </div>
+          <div class="user-wrapper bg-dark">
+            <a class="user-link" href="">
+              <i class="fa fa-user fa-5x"></i>
+            </a> 
+            <div class="media-body">
+              <ul class="list-unstyled user-info">
+                <li> <a href="">Admin</a>  </li>
+                <li>Ultimo acceso :
+                  <br>
+                  <small>
+                    <i class="fa fa-calendar"></i>&nbsp;16 Mar 16:32</small> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+<!-- #menu -->
+        <ul id="menu" class="bg-blue dker">
+          <li class="nav-header">Menú</li>
+          <li class="nav-divider"></li>
+          <li class="active">
+            <a href="javascript:;">
+              <i class="fa fa-tasks"></i>
+              <span class="link-title">Administración</span> 
+              <span class="fa arrow"></span> 
+            </a> 
+            <ul>
+              <li>
+                <a href=cargar_venta.html>
+                  <i class="fa fa-angle-right"></i>&nbsp; Cargar factura </a> 
+              </li>
+              <li>
+                <a href="altamira.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Altamira </a> 
+              </li>
+              <li>
+                <a href="proseguros.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Proseguros </a> 
+              </li>
+              <li>
+                <a href="qualita.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Qualita </a> 
+              </li>
+              <li>
+                <a href="universal.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Universal </a> 
+              </li>
+              <li>
+                <a href="carabobo.html">
+                  <i class="fa fa-angle-right"></i>&nbsp; Seguros Carabobo </a> 
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="estado_financiero.html">
+              <i class="fa fa-bar-chart-o"></i><span class="link-title">&nbsp;Estado Financiero</span> 
+            </a> 
+            </li>
+
+        <!-- /#menu -->
+      </div><!-- /#left -->
+      <div id="content">
+        <div class="outer">
+          <div class="inner bg-light lter">
+            <div class="col-lg-12">
+
+<!-- CUADRO ESTADISTICO -->
+                <div class="col-lg-12 text-center">
+                <ul class="stats_box">
+                <li style="width: 250px;">
+                  <div class="sparkline pie_week"></div>
+                  <div class="stat_text">
+                    <strong>Bs 300.345,85</strong> Total Vencido
+                    <span class="percent" style="right: -10px;"> 20%</span> 
+                  </div>
+                </li>
+                <li style="width: 270px">
+                  <div class="sparkline pie_week"></div>
+                  <div class="stat_text">
+                    <strong>Bs 100.678,73</strong> Por Pagar
+                    <span class="percent down" style="right: -30px;"> <i class="fa fa-caret-down"></i> -10%</span> 
+                  </div>
+                </li>
+              </ul>
+                </div>
+<!-- CUADRO ESTADISTICO -->
+
+            <!--Begin Datatables-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="box">
+                  <header>
+                    <div class="icons">
+                      <i class="fa fa-table"></i>
+                    </div>
+                    <h5>Facturas Seguros Altamira</h5>
+                    <div class="toolbar">
+                      <nav style="padding: 8px;">
+                        <a href="javascript:;" class="btn btn-default btn-xs collapse-box">
+                          <i class="fa fa-minus"></i>
+                        </a> 
+                        <a href="javascript:;" class="btn btn-default btn-xs full-box">
+                          <i class="fa fa-expand"></i>
+                        </a> 
+                        <a href="javascript:;" class="btn btn-danger btn-xs close-box">
+                          <i class="fa fa-times"></i>
+                        </a> 
+                      </nav>
+                    </div>
+                  </header>
+                  <div id="collapse4" class="body">
+                    <table id="pagar" class="table table-bordered table-condensed table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th>N° Factura</th>
+                          <th>Emision</th>
+                          <th>Recepción</th>
+                          <th>Días vencidos</th>
+                          <th>Siniestro</th>
+                          <th>Estatus</th>
+                          <th>Monto</th>
+                          <th>Vendedor</th>
+                          <th>Observación</th>
+                          <th>Acción</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>00214655</td>
+                          <td>01-01-2016</td>
+                          <td>10-01-2016</td>
+                          <td>5</td>
+                          <td>3001-010000-2016-210</td>
+                          <td>Pendiente</td>
+                          <td>350.950,80</td>
+                          <td>Pedro Perez</td>
+                          <td></td>
+                          <td class="text-center">
+                            <a data-toggle="modal" data-original-title="Help" data-placement="bottom" href="#helpModal" class="btn btn-success btn-flat" data-original-title="" title="Imprmir totales">
+                            <i class="fa fa-edit fa-sm"></i> Editar
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>00012654789</td>
+                          <td>05-09-2016</td>
+                          <td>09-09-2016</td>
+                          <td>0</td>
+                          <td>4021-020000-2016-320</td>
+                          <td>Pendiente</td>
+                          <td>Bs 250.000,00</td>
+                          <td>Ramon Castellano</td>
+                          <td></td>
+                          <td class="text-center">
+                            <a data-toggle="modal" data-original-title="Help" data-placement="bottom" href="#helpModal" class="btn btn-success btn-flat" data-original-title="" title="Imprmir totales">
+                            <i class="fa fa-edit fa-sm"></i> Editar
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>00021332</td>
+                          <td>05-09-2016</td>
+                          <td>09-09-2016</td>
+                          <td>0</td>
+                          <td>10100/2015/1922</td>
+                          <td>Cancelada</td>
+                          <td>Bs 80.000,00</td>
+                          <td>Predo Perez</td>
+                          <td></td>
+                          <td class="text-center">
+                            <a data-toggle="modal" data-original-title="Help" data-placement="bottom" href="#helpModal" class="btn btn-success btn-flat" data-original-title="" title="Imprmir totales">
+                            <i class="fa fa-edit fa-sm"></i> Editar
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row
+
+            <!--End Datatables-->
+
+            </div>
+          </div><!-- /.inner -->
+        </div><!-- /.outer -->
+      </div><!-- /#content -->
+      <div id="right" class="bg-light lter">
+        <div class="alert alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Warning!</strong>  Best check yo self, you're not looking too good.
+        </div>
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <ul class="list-unstyled">
+            <li>Visitor <span class="inlinesparkline pull-right">1,4,4,7,5,9,10</span> </li>
+            <li>Online Visitor <span class="dynamicsparkline pull-right">Loading..</span> </li>
+            <li>Popularity <span class="dynamicbar pull-right">Loading..</span> </li>
+            <li>New Users <span class="inlinebar pull-right">1,3,4,5,3,5</span> </li>
+          </ul>
+        </div><!-- /.well well-small -->
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <button class="btn btn-block">Default</button>
+          <button class="btn btn-primary btn-block">Primary</button>
+          <button class="btn btn-info btn-block">Info</button>
+          <button class="btn btn-success btn-block">Success</button>
+          <button class="btn btn-danger btn-block">Danger</button>
+          <button class="btn btn-warning btn-block">Warning</button>
+          <button class="btn btn-inverse btn-block">Inverse</button>
+          <button class="btn btn-metis-1 btn-block">btn-metis-1</button>
+          <button class="btn btn-metis-2 btn-block">btn-metis-2</button>
+          <button class="btn btn-metis-3 btn-block">btn-metis-3</button>
+          <button class="btn btn-metis-4 btn-block">btn-metis-4</button>
+          <button class="btn btn-metis-5 btn-block">btn-metis-5</button>
+          <button class="btn btn-metis-6 btn-block">btn-metis-6</button>
+        </div><!-- /.well well-small -->
+
+        <!-- .well well-small -->
+        <div class="well well-small dark">
+          <span>Default</span> <span class="pull-right"><small>20%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+          </div>
+          <span>Success</span> <span class="pull-right"><small>40%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+          </div>
+          <span>warning</span> <span class="pull-right"><small>60%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+          </div>
+          <span>Danger</span> <span class="pull-right"><small>80%</small> </span> 
+          <div class="progress xs">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+          </div>
+        </div>
+      </div><!-- /#right -->
+    </div><!-- /#wrap -->
+    <footer class="Footer bg-dark dker">
+      <p>© Copyright 2016 Zona PC. Todos los Derechos Reservados.</p>
+    </footer><!-- /#footer -->
+  
+     <!--jQuery -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.4/js/jquery.tablesorter.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.1/js/bootstrap-colorpicker.min.js"></script>
+
+    <!--Bootstrap -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- MetisMenu -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+    <!-- Screenfull -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
+    <script src="assets/lib/jquery-inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="assets/lib/jQuery.validVal/js/jquery.validVal.min.js"></script>
+
+    <!-- Metis core scripts -->
+    <script src="assets/js/core.min.js"></script>
+
+    <!-- Metis demo scripts -->
+    <script src="assets/js/app.js"></script>
+
+
+    <script>
+
+     $(document).ready(function() {
+      $('#pagar').DataTable( {
+        "scrollX": false,
+        "paging":   true,
+        "ordering": false,
+        "info":     false,        
+        "searching":   true
+    } );    
+} );
+
+      $(function() {
+        Metis.formGeneral();
+      });
+    </script>
+    <script src="assets/js/style-switcher.min.js"></script>
+
+
+  <!-- #helpModal -->
+    <div id="helpModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Editar factura de venta</h4>
+          </div>
+          <div class="modal-body">
+<!--------- FORMULARIO -------->
+                  <div id="div-4" class="body">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">N° Factura:</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" type="text" placeholder="0004597" maxlength="100">
+                        </div>
+                      </div>
+                      <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Siniestro:</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" type="text" placeholder="AUTI-1268-060000-2016" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Seguro:</label>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                            <option>Altamira</option>
+                            <option>Qualitas</option>
+                            <option>Universitas</option>
+                            <option>Internacional</option>
+                            <option>Proseguros</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Fecha de emisión: </label>
+                        <div class="col-lg-6">
+                          <div class="input-group input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" type="text" value="12-02-2012" readonly>
+                            <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Fecha de recepción: </label>
+                        <div class="col-lg-6">
+                          <div class="input-group input-append date" id="dp2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" type="text" value="12-02-2012" readonly>
+                            <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Estatus:</label>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                            <option>Pendiente</option>
+                            <option>Cancelada</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Vendedor:</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" type="text" placeholder="Pedro Perez" maxlength="100">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Monto: </label>
+                        <div class="col-lg-6">
+                          <div class="input-group">
+                            <span class="input-group-addon">Bs</span> 
+                            <input class="form-control" type="text" placeholder="320.850,80">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-lg-3">Observación:</label>
+                        <div class="col-lg-6">
+                            <textarea id="text4" class="form-control" placeholder="Alguna observación por esta venta"></textarea>
+                        </div>
+                      </div>
+                    </form>
+            </div>
+            <!------------------- FORMULARIO -------------------------->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Guardar</button>
+          </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --><!-- /#helpModal -->
+
+
+
+  </body>
